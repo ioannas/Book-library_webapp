@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div ng-app="myApp" ng-controller="cntrl">
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta charset="utf-8"/>
+	<title>Εγγραφή</title>
+</head>
+<body >	
+
+	
+
+
+    <header> 
+        <div class="login"> 
+       <form>
+         
+       	     E-mail:
+             <input type="email" name="email" ng-model= "username" placeholder="E-mail"> 
+             Κωδικός:
+             <input type="pwd" name="Κωδικός" ng-model= "pass1" placeholder="Password">
+            <a href="mainmenu.html" class="button" value="{{btnName}}" ng-click = "insertdata()">Log in</a> 
+
+          
+       
+         </form>
+        </div>
+</header>
+
+
+    <br />
+    <br />
+    <br />		
+	
+	
+	<div class="signup"> 
+		<h3>Start saving time Now!! Join Us</h3> 
+		<form>
+              <!--BVAZW TO ID  DE XRIAZETAI ELEOS-->
+            <?Teacher ID: <?br>
+             <?input type="text" ng-model="id" name="id" ng-disabled="obj.idisable"><?br>
+             
+             <input type="text" name="Username" ng-model= "username" placeholder="Username"><br>
+             
+             <input type="email" name="email" ng-model= "email" placeholder="Bob123@gmail.com"><br>
+             
+             <input type="pwd_1" ng-model= "pass1" name="Κωδικός" placeholder="Κωδικός"><br>
+             
+             <input type="pwd_2" ng-model= "pass2" name="Επαλήθευση Κωδικού" placeholder="Επαλήθευση Κωδικού"><br /> <br />
+             <a href="mainmenu.html" class="button2" value="{{btnSign}}" ng-click = "insertdata()">Sign up</a>
+               <br />
+             
+		</form>
+		<br /> 
+   <p>Ξέχασες τον κωδικό σου; <u style="color:#f1c40f;">Πάτα εδώ!</u></p>
+
+</div>
+
+<!--VGAZEI KATI AKURA KATO STI SELIDA TO EVALA SXOLIO -->
+
+<!--<table>
+    <tbody>
+        <tr ng-repeat="x in data">
+            <?td> {{x.id}}</?td>
+            <td> {{x.username}}</td>
+            <td> {{x.email}}</td>
+            <td> {{x.pass1}}</td>
+            <td> {{x.pass2}}</td>
+            <td><button ng-click="editStud(x.username);">Sign Up</button></td>
+            
+
+        </tr>
+        
+
+
+    </tbody>
+
+</table>-->
+
+<div class="box_greeting">
+    <p>Hello! Καλωσηρθατε στην εφαρμογη που θα σας λυσει τα χερια! Με λιγα απλα βηματα εχεις οτι χρειαζεσαι οργανωμενα και στην σειρα
+    Δοκιμασε μας!! Ειναι ΔΩΡΕΑΝ !!!</p>
+    
+
+
+
+</div>
+
+
+<script>
+var app=angular.module('myApp',[]);
+app.controller('cntrl', function($scope,$http){
+    $scope.obj={'idisable':false};
+    $scope.btnName="Insert";
+
+    $scope.insertdata=function(){
+        $http.post("insert.php",{'username':$scope.username, 'email':$scope.email, 'pass1':$scope.pass1, 'pass2':$scope.pass2,
+            'btnName':$scope.btnName, 'btnSign':$scope.btnSign})
+        .success(function(){
+            $scope.msg="Data Inserted";
+            $scope.displayStud();
+
+        })
+
+    }
+
+    $scope.displayStud=function(){
+        $http.get("select.php")
+        .success(function(data){
+            $scope.data=data
+        })
+    }
+  
+
+    }
+   
+
+
+    $scope.deleteStud=function(studid){  
+        $http.post("delete.php",{'username':studid})
+        .success(function(){
+                $scope.msg="Data Deletion successfull";
+                $scope.displayStud();
+
+
+        })
+
+    }
+
+    $scope.editStud=function(studname)
+    {
+        
+        $scope.name=studname;
+        $scope.btnName="Update";
+        $scope.obj.idisable=true;
+        $scope.displayStud();
+
+    }
+
+});
+
+
+</script>
+ <!--EXW ALLAKSEI STIN STUDID TO ID ME USERNAME DE THIMAMAI TI KANEI-->
+
+
+
+</body>
+</html>

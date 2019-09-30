@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<meta charset="utf-8"/>
+
+	<title>ΦΟΡΜΑ ΕΙΣΑΓΩΓΗΣ ΒΙΒΛΙΟΥ</title>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Αρχική</a>
+  <a href="#modules">Modules</a>
+  <div class="dropdown">
+    <button class="dropbtn">Ρυθμίσεις
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="rithmisislogariasmou.html">Λογαριασμός Χρήστη</a>
+      <a href="#">Βιβλία</a>
+      
+    </div>
+  </div> 
+  <a href="faq.html">FAQ</a>
+</div>
+<br />
+ <br />
+ <br />
+ 
+
+
+<form> 
+  
+<div class="component">
+	<div class="content">
+		<div class="form-group">
+ <div class="newBook">
+ 	<h2> Νέο Βιβλίο: </h2> <br />
+
+ 	Tίτλος Βιβλίου:<br />
+ 	<input class="form-control" type="text" name="titlos" ng-model="$ctrl.cookie"> 
+ 	<br />
+ 	<br />
+ 	Περιγραφή Βιβλίου:<br />
+ 	<input  class="form-control" type="text" name="perigrafi" ng-model="$ctrl.cookie"> <br />
+ 	<br />
+ 	Συγγραφέας:<br />
+ 	<input class="form-control" type="text" name="siggrafeas" ng-model="$ctrl.cookie"> <br />
+ 	<br />
+ 	Εκδώσεις:<br />
+ 	<input class="form-control" type="text" name="ekdoseis" ng-model="$ctrl.cookie"> <br />
+ 	<br />
+ 	Σημαντικές Λεπτομέρειες:<br />
+ 	<input class="form-control" type="text" name="leptomeries" ng-model="$ctrl.cookie"> <br />
+ 	<br />
+ 	<br />
+  
+
+  
+ 	<div ng-controller= "myCtrl">
+ 		<input type="file" file-model="myFile" />
+
+ 		<button ng-click="uploadfile()">Upload</button>
+ 	</div>
+
+    
+    <br />
+    <br />
+    <br /> 
+          
+   	      <button class="btn btn-primary" ng-click="$ctrl.storeCookie($ctrl.cookie)">Καταχώρηση</button>
+  </div>
+  </div>
+    </div>
+     </div>
+
+
+ </form>
+  
+
+
+</body>
+</html>

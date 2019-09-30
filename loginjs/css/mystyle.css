@@ -1,0 +1,349 @@
+body{
+	background-color: #4c5165;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto 0 auto;  
+    width:100%; 
+    text-align:center;
+    margin: 20px 0px 20px 0px;  
+
+}
+
+h1{
+margin-top: 150px;
+
+}
+
+
+.login{
+ background:#d3d3d3;
+ padding-top: 0px;
+ padding-bottom: 7px;
+ padding-right: 790px;
+ height: 50px;
+ border: #d3d3d3 2px solid;
+  
+   
+
+}
+
+.login input {
+  
+  font-family: 'Arial', sans-serif;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:200px;
+  margin: 9px;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+
+}
+
+/*sign up style*/
+
+h3{
+
+  font-size:1em;
+  color:#525252;
+}
+
+p{
+  font-size:12px;
+  text-decoration: none;
+  
+}
+
+
+
+ .signup {
+  background:#d3d3d3;
+  width:480px;
+  border-radius:6px;
+  margin: 100px 70px;
+  padding:0px 0px 0px 0px;
+  border: #d3d3d3 4px solid; 
+  height: 430px;
+  margin-top: 20px;
+  float: left;
+  
+
+
+
+
+
+
+   }
+  
+  .signup input{
+  font-family: 'Arial', sans-serif;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 10px;
+  width:300px;
+  margin: 9px;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+
+  
+  
+}
+
+.button {  /*login*/
+  background:#2ecc71;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #339966 1px solid;
+  
+  margin-top:10px;
+  margin-bottom:20px;
+  float:center;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+
+}
+
+.button2{ /*sign=up*/
+ 
+  background:#2ecc71;
+  width: 400px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:white;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  
+  margin-top:25px;
+  margin-bottom:25px;
+  float:center;
+
+  
+  font-weight:600;
+  font-size:1.0em;
+}
+
+
+.box_greeting {
+   background:#d3d3d3;
+  width:480px;
+  border-radius:6px;
+  margin: 80px 100px;
+  margin-top: 20px;
+  padding:50px 0px 50px 0px;
+  border: #d3d3d3 4px solid; 
+  height: 430px;
+ box-sizing: border-box;
+ float: right;
+
+}
+
+
+
+/* main menu*/
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  height: 60px;
+  margin-top: 0px;
+  padding-top: 15px;
+
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 17px;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+  /*search*/
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+
+
+
+/* ta tetragwnakia*/
+
+h1 {
+
+	
+
+}
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+    background-color: white;
+    height: 300px;
+}
+ 
+
+
+
+
+  .btn1 {
+    border: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff9800;
+}
+
+.btn2 {
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+.btn3 {
+    border: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+
+
+
+/************************************************************/
+
+/* καταχωρηση βιβλιου*/
+
+.newBook{
+ 
+ font-family: 'Arial', sans-serif;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+
+  width:300px;
+  margin: 40%;
+  color:black;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+  
+
+}
+
+.newBook input {
+
+  font-family: 'Arial', sans-serif;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:200px;
+  margin: 9px;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+
+
+
+}
+
+.btn-primary {
+	border: none;
+    color: white;
+    width: 40%;
+    height: 40%;
+    padding: 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336;
+    
+
+}

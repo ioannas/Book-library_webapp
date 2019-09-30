@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+		
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<div ng-module = "postLogin", ng-controller = "PostController" >
+<head>
+	<title>OnLine-Πρότυπο Εκπαίδευσης</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="OnLine-Πρότυπο Εκπαίδευσης">
+	<meta name="keywords" content="OnLine, education, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	<link rel="stylesheet" type="text/css" href="formstyle.css">
+</head>
+<body>
+	<div class="back">
+
+<form action="userauth.php" style="border:1px solid #ccc">
+	<div class="container">
+		<h1>Σύνδεση</h1>
+		
+		<hr>
+
+		<label for="email"><b>Email</b></label> 
+		<input type="text" placeholder="Email" name="email" required>
+
+		<label for="psw"><b>Κωδικός</b></label>
+		<input type="password" placeholder="Κωδικός" name="psw" required>
+
+		
+        <label>
+        	<input type="checkbox" name="checked" name="remember" style="margin-bottom: 15px"> Remember me
+
+        </label>
+
+        
+
+        <div class="clearfix">
+ 
+        	<button type="submit" class="signupbtn">Σύνδεση</button>
+        </div>
+
+
+
+
+	</div>
+	
+
+
+
+
+
+</form>
+
+</div>
+
+
+</body>
+</html>
